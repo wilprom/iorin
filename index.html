@@ -16,13 +16,17 @@
     ></script>
   </head>
   <body>
+    <!-- START HEADER -->
     <header class="header">
+      <!-- START LOGO -->
       <a href="./index.html"
         ><img
           src="./assets/img/logo/Logo.png"
           alt="Logo Iorin"
           class="header__logo"
       /></a>
+      <!-- END LOGO -->
+      <!-- START MAIN NAVIGATION -->
       <nav class="nav" aria-label="main navigation">
         <ul class="nav__list">
           <li class="nav__list__item">
@@ -38,6 +42,7 @@
             <a href="#" class="nav__list__link">A propos</a>
           </li>
         </ul>
+        <!-- START SEARCH FORM -->
         <form action="" role="search" class="form-search">
           <label for="search" class="form-search__label hidden"
             >Rechercher</label
@@ -58,10 +63,18 @@
           </button>
         </form>
       </nav>
+      <!-- END SEARCH FORM -->
+      <!-- END MAIN NAVIGATION -->
     </header>
+    <!-- END HEADER -->
+    <!-- START BODY -->
     <body></body>
+    <!-- END BODY -->
+    <!-- START FOOTER -->
     <footer class="footer">
+      <!-- START FOOTER LOGO -->
       <img src="./assets/img/logo/Logo_blanc.png" alt="" class="footer__logo" />
+      <!-- END FOOTER LOGO -->
       <div class="footer__container">
         <div class="footer__content">
           <h3 class="footer__content__title">
@@ -71,6 +84,7 @@
             Inscrivez-vous et soyez le premier à recevoir les dernières
             nouvelles sur les tendances, les promotions et bien plus encore !
           </p>
+          <!-- START EMAIL SENDING FORM -->
           <form action="" class="form-send-email">
             <label for="email" class="form-send-email__label hidden"
               >Email</label
@@ -90,7 +104,9 @@
               Envoyer
             </button>
           </form>
+          <!-- END EMAIL SENDING FORM -->
         </div>
+        <!-- START FOOTER NAVIGATION -->
         <nav class="footer-nav" aria-label="footer navigation">
           <ul class="footer-nav__list">
             <li class="footer-nav__list__item">
@@ -133,9 +149,13 @@
             </li>
           </ul>
         </nav>
+        <!-- END FOOTER NAVIGATION -->
       </div>
     </footer>
+    <!-- END FOOTER -->
+
     <!-- SCRIPT -->
     <script type="module" src="./scripts/pages/home.js"></script>
+    <!-- END SCRIPT -->
   </body>
 </html>
