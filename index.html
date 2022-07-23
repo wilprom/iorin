@@ -38,8 +38,8 @@
             <a href="#" class="nav__list__link">A propos</a>
           </li>
         </ul>
-        <form action="" role="search" class="form__search">
-          <label for="search" class="form__search__label hidden"
+        <form action="" role="search" class="form-search">
+          <label for="search" class="form-search__label hidden"
             >Rechercher</label
           >
           <input
@@ -47,11 +47,11 @@
             name="search"
             id="search"
             placeholder="Rechercher un produit"
-            class="form__search__input"
+            class="form-search__input"
           />
           <button
             type="submit"
-            class="form__search__btn"
+            class="form-search__btn"
             aria-label="start search"
           >
             <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
@@ -60,7 +60,81 @@
       </nav>
     </header>
     <body></body>
-    <footer></footer>
+    <footer class="footer">
+      <img src="./assets/img/logo/Logo_blanc.png" alt="" class="footer__logo" />
+      <div class="footer__container">
+        <div class="footer__content">
+          <h3 class="footer__content__title">
+            Restez à jour avec notre histoire
+          </h3>
+          <p class="footer__content__paragraph">
+            Inscrivez-vous et soyez le premier à recevoir les dernières
+            nouvelles sur les tendances, les promotions et bien plus encore !
+          </p>
+          <form action="" class="form-send-email">
+            <label for="email" class="form-send-email__label hidden"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Entrer votre adresse mail"
+              class="form-send-email__input"
+            />
+            <button
+              type="submit"
+              class="form-send-email__btn btn btn--bg-green"
+              aria-label="send email"
+            >
+              Envoyer
+            </button>
+          </form>
+        </div>
+        <nav class="footer-nav" aria-label="footer navigation">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link footer-nav__list__title"
+                >Aide</a
+              >
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link">Créer un compte</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link"
+                >Rechercher un produit</a
+              >
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link"
+                >Télécharger & imprimer</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link footer-nav__list__title"
+                >Support</a
+              >
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link">Service clientèle</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link"
+                >Envoyez-nous un e-mail</a
+              >
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="#" class="footer-nav__list__link"
+                >Politique de confidentialité</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <!-- SCRIPT -->
     <script type="module" src="./scripts/pages/home.js"></script>
   </body>
