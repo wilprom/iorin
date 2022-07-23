@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'orkneyregular';
+  src: url('/assets/font/orkney/orkney_regular/orkney-regular-webfont.woff')
+      format('woff'),
+    url('/assets/font/orkney/orkney_regular/orkney-regular-webfont.ttf')
+      format('truetype'),
+    url('/assets/font/orkney/orkney_regular/orkney-regular-webfont.svg#orkneyregular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'orkneyregular', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}

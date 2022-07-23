@@ -1,0 +1,21 @@
+{
+  "name": "iorin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style/style.css",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilfriedProm/Iorin.git"
+  },
+  "author": "Wilfried Prombo",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/WilfriedProm/Iorin/issues"
+  },
+  "homepage": "https://github.com/WilfriedProm/Iorin#readme"
+}
