@@ -1,0 +1,26 @@
+.btn {
+  color: #ffffff;
+  border-radius: 1.5rem;
+  border: 0;
+  padding: 0.5rem 2rem;
+  position: relative;
+  z-index: 1;
+  &--bg-green {
+    background-color: $color-primary;
+  }
+  &--bg-white {
+    background-color: #ffffff;
+  }
+  &::after {
+    @include pseudo-element;
+    background-color: $color-tertiary;
+    border-radius: 1.5rem;
+    z-index: -1;
+    opacity: 0;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
