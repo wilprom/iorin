@@ -17,7 +17,7 @@
       font-size: map-get($map: $font-size, $key: h3);
     }
     &__title,
-    &__paragraph {
+    &__text {
       width: 95%;
     }
   }
