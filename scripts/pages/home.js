@@ -1,2 +1,5 @@
 // Import carousel script
-import '/scripts/utils/carousel.js'
+import '../utils/carousel.js'
+
+// Import scrollingImages script
+import '../utils/scrollingImages.js'

@@ -257,4 +257,58 @@ body * {
   right: 0.65rem;
 }
 
+.categories-product {
+  display: flex;
+  padding: 7.5rem 0 7.5rem 7.5rem;
+}
+.categories-product__content__title {
+  font-size: 3rem;
+}
+.categories-product__content__text__arrow {
+  color: #494949;
+  padding-left: 1.25rem;
+}
+.categories-product__scrolling-images {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin-left: 5rem;
+}
+.categories-product__scrolling-images__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.categories-product__scrolling-images__image {
+  min-width: 17.813rem;
+  height: 18.75rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  margin-right: 1.25rem;
+}
+.categories-product__scrolling-images__arrows {
+  text-align: right;
+  padding: 4.375rem 7.5rem 0 0;
+}
+.categories-product__scrolling-images__arrows .preview,
+.categories-product__scrolling-images__arrows .next {
+  cursor: pointer;
+  color: #494949;
+  user-select: none;
+  padding: 1rem;
+}
+.categories-product__scrolling-images__arrows .preview {
+  margin-right: 2.5rem;
+}
+.categories-product__scrolling-images__arrows .preview:hover {
+  color: #ffffff;
+  background-color: #209151;
+}
+.categories-product__scrolling-images__arrows .next:hover {
+  color: #ffffff;
+  background-color: #209151;
+}
+
 /*# sourceMappingURL=style.css.map */
