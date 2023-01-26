@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/WilfriedProm/Iorin/issues"
   },
-  "homepage": "https://github.com/WilfriedProm/Iorin#readme"
+  "homepage": "https://github.com/WilfriedProm/Iorin#readme",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
 }

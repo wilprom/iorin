@@ -1,21 +1,37 @@
-let slideIndex = 0
-showSlides()
+// Splide carousel js
+const splides = document.querySelectorAll('.splide')
 
-function showSlides() {
-  let i
-  let slides = document.getElementsByClassName('carousel__slide')
-  let dots = document.getElementsByClassName('carousel__dots__dot')
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none'
+// Hero splide
+const heroSplide = new Splide(splides[0], {
+  arrows: false,
+  type: 'fade',
+  rewind: true,
+  speed: 300,
+  autoplay: true,
+  interval: 7000,
+  // Add classes for custom elt
+  classes: {
+    pagination: 'splide__pagination hero-carousel__dots',
   }
-  slideIndex++
-  if (slideIndex > slides.length) {
-    slideIndex = 1
+})
+
+heroSplide.mount()
+
+// Best products splide
+const bestProductSplide = new Splide(splides[1], {
+  type: 'loop',
+  perPage: 3,
+  gap : '1rem',
+  focus: 'center',
+  pagination: false,
+  // Add classes for custom elt
+  classes: {
+		arrow : 'splide__arrow best-product-carousel__arrow',
+		prev  : 'splide__arrow--prev best-product-carousel__arrow__prev',
+		next  : 'splide__arrow--next best-product-carousel__arrow__next',
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '')
-  }
-  slides[slideIndex - 1].style.display = 'block'
-  dots[slideIndex - 1].className += ' active'
-  setTimeout(showSlides, 3000) // Change image every 3 seconds
-}
+})
+
+bestProductSplide.on('arrows:mounted')
+
+bestProductSplide.mount()

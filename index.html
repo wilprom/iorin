@@ -9,6 +9,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css" />
 
+    <!-- SPLIDE CAROUSEL CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+
     <!-- ICON -->
     <script
       src="https://kit.fontawesome.com/3cca219877.js"
@@ -71,108 +77,108 @@
         <!-- START HERO SECTION -->
         <section class="hero">
           <!-- START CAROUSEL -->
-          <div class="carousel">
-            <!--START SLIDES -->
-            <!-- SLIDE ONE -->
-            <div class="carousel__slide fade">
-              <img
-                src="./assets/img/hero/hero_img1.jpg"
-                alt=""
-                class="carousel__slide__img"
-              />
-              <div class="carousel__slide__content">
-                <h1 class="carousel__slide__content__title">
-                  Votre impression en toute rapidité
-                </h1>
-                <p class="carousel__slide__content__text">
-                  Nous vous offrons nos services en plusieurs étapes :
-                  l’impression de vos courriers, la mise sous pli et l’envoi à
-                  différentes adresses
-                </p>
-                <a
-                  href="#"
-                  class="carousel__slide__content__link btn btn--bg-green"
-                >
-                  Nous contacter
-                  <i
-                    class="fa-brands fa-whatsapp carousel__slide__content__link__icon icon"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+          <div
+            class="splide hero-carousel"
+            role="group"
+            aria-label="Main carousel"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/hero/hero_img1.jpg"
+                    alt=""
+                    class="hero-carousel__slide__img"
+                  />
+                  <div class="hero-carousel__slide__content">
+                    <h1 class="hero-carousel__slide__content__title">
+                      Votre impression en toute rapidité
+                    </h1>
+                    <p class="hero-carousel__slide__content__text">
+                      Nous vous offrons nos services en plusieurs étapes :
+                      l’impression de vos courriers, la mise sous pli et l’envoi
+                      à différentes adresses
+                    </p>
+                    <a
+                      href="#"
+                      class="hero-carousel__slide__content__link btn btn--bg-green"
+                    >
+                      Nous contacter
+                      <i
+                        class="fa-brands fa-whatsapp hero-carousel__slide__content__link__icon icon"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/hero/hero_img2.jpg"
+                    alt=""
+                    class="hero-carousel__slide__img"
+                  />
+                  <div class="hero-carousel__slide__content">
+                    <h1 class="hero-carousel__slide__content__title">
+                      Démarrer votre entreprise
+                    </h1>
+                    <p class="hero-carousel__slide__content__text">
+                      Nous vous offrons nos services en plusieurs étapes :
+                      l’impression de vos courriers, la mise sous pli et l’envoi
+                      à différentes adresses
+                    </p>
+                    <a
+                      href="#"
+                      class="hero-carousel__slide__content__link btn btn--bg-green"
+                    >
+                      Nous contacter
+                      <i
+                        class="fa-brands fa-whatsapp hero-carousel__slide__content__link__icon icon"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/hero/hero_img1.jpg"
+                    alt=""
+                    class="hero-carousel__slide__img"
+                  />
+                  <div class="hero-carousel__slide__content">
+                    <h1 class="hero-carousel__slide__content__title">
+                      La qualité au rendez-vous
+                    </h1>
+                    <p class="hero-carousel__slide__content__text">
+                      Nous vous offrons nos services en plusieurs étapes :
+                      l’impression de vos courriers, la mise sous pli et l’envoi
+                      à différentes adresses
+                    </p>
+                    <a
+                      href="#"
+                      class="hero-carousel__slide__content__link btn btn--bg-green"
+                    >
+                      Nous contacter
+                      <i
+                        class="fa-brands fa-whatsapp hero-carousel__slide__content__link__icon icon"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <!-- SLIDE TWO -->
-            <div class="carousel__slide fade">
-              <img
-                src="./assets/img/hero/hero_img2.jpg"
-                alt=""
-                class="carousel__slide__img"
-              />
-              <div class="carousel__slide__content">
-                <h1 class="carousel__slide__content__title">
-                  Démarrer votre entreprise
-                </h1>
-                <p class="carousel__slide__content__text">
-                  Nous vous offrons nos services en plusieurs étapes :
-                  l’impression de vos courriers, la mise sous pli et l’envoi à
-                  différentes adresses
-                </p>
-                <a
-                  href="#"
-                  class="carousel__slide__content__link btn btn--bg-green"
-                >
-                  Nous contacter
-                  <i
-                    class="fa-brands fa-whatsapp carousel__slide__content__link__icon icon"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
-            </div>
-            <!-- SLIDE THREE -->
-            <div class="carousel__slide fade">
-              <img
-                src="./assets/img/hero/hero_img1.jpg"
-                alt=""
-                class="carousel__slide__img"
-              />
-              <div class="carousel__slide__content">
-                <h1 class="carousel__slide__content__title">
-                  La qualité au rendez-vous
-                </h1>
-                <p class="carousel__slide__content__text">
-                  Nous vous offrons nos services en plusieurs étapes :
-                  l’impression de vos courriers, la mise sous pli et l’envoi à
-                  différentes adresses
-                </p>
-                <a
-                  href="#"
-                  class="carousel__slide__content__link btn btn--bg-green"
-                >
-                  Nous contacter
-                  <i
-                    class="fa-brands fa-whatsapp carousel__slide__content__link__icon icon"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
-            </div>
-            <!-- END SLIDES -->
-            <!-- START DOTS -->
-            <div class="carousel__dots">
-              <span class="carousel__dots__dot"></span>
-              <span class="carousel__dots__dot"></span>
-              <span class="carousel__dots__dot"></span>
-            </div>
-            <!-- END DOTS -->
           </div>
           <!-- END CAROUSEL -->
         </section>
         <!-- END HERO SECTION -->
         <!-- START CATEGORIES PRODUCT -->
         <section class="categories-product">
+          <!-- CONTENT -->
           <div class="categories-product__content">
-            <h2 class="categories-product__content__title">
+            <h2
+              class="categories-product__content__title"
+              id="carousel-best-products-title"
+            >
               Meilleurs produits par catégories
             </h2>
             <p class="categories-product__content__text">
@@ -182,39 +188,66 @@
               ></i>
             </p>
           </div>
-          <div class="categories-product__scrolling-images">
-            <div class="categories-product__scrolling-images__wrapper">
-              <img
-                src="./assets/img/categories/categories_img1.jpg"
-                alt=""
-                class="categories-product__scrolling-images__image"
-              />
-              <img
-                src="./assets/img/categories/categories_img2.jpg"
-                alt=""
-                class="categories-product__scrolling-images__image"
-              />
-              <img
-                src="./assets/img/categories/categories_img3.jpg"
-                alt=""
-                class="categories-product__scrolling-images__image"
-              />
-              <img
-                src="./assets/img/categories/categories_img1.jpg"
-                alt=""
-                class="categories-product__scrolling-images__image"
-              />
-              <img
-                src="./assets/img/categories/categories_img2.jpg"
-                alt=""
-                class="categories-product__scrolling-images__image"
-              />
+          <!-- CAROUSEL -->
+          <section
+            class="splide best-product-carousel"
+            aria-labelledby="carousel-best-products-title"
+          >
+            <!-- ARROWS -->
+            <div class="splide__arrows">
+              <button
+                class="splide__arrow splide__arrow--prev best-product-carousel__arrow best-product-carousel__arrow__prev"
+              >
+                <!-- * left-arrow does not function normally -->
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next best-product-carousel__arrow best-product-carousel__arrow__next"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
-            <div class="categories-product__scrolling-images__arrows">
-              <i class="fa-solid fa-arrow-left preview"></i>
-              <i class="fa-solid fa-arrow-right next"></i>
+            <!-- SLIDES -->
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/categories/categories_img1.jpg"
+                    alt=""
+                    class="best-product-carousel__image"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/categories/categories_img2.jpg"
+                    alt=""
+                    class="best-product-carousel__image"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/categories/categories_img3.jpg"
+                    alt=""
+                    class="best-product-carousel__image"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/categories/categories_img1.jpg"
+                    alt=""
+                    class="best-product-carousel__image"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/img/categories/categories_img2.jpg"
+                    alt=""
+                    class="best-product-carousel__image"
+                  />
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
         </section>
         <!-- END CATEGORIES PRODUCT -->
       </main>
@@ -300,8 +333,12 @@
     </footer>
     <!-- END FOOTER -->
 
-    <!-- SCRIPT -->
-    <script type="module" src="./scripts/pages/home.js"></script>
-    <!-- END SCRIPT -->
+    <!-- SCRIPTS -->
+
+    <!-- SCRIPT CAROUSEL ELEMENTS -->
+    <script type="module" src="./scripts/utils/carousel.js"></script>
+
+    <!-- SCRIPT SPLIDE LIBRARY -->
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
   </body>
 </html>
