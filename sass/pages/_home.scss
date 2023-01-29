@@ -15,3 +15,47 @@
     }
   }
 }
+.custom-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__content {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    &__title {
+      font-size: map-get($map: $font-size, $key: h2);
+      font-weight: 700;
+      color: $color-quaternary;
+    }
+    &__text {
+      font-size: map-get($map: $font-size, $key: text);
+      color: #b9b8b8;
+    }
+  }
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 7.625rem;
+    margin: 3.438rem 10.625rem;
+    &__item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__img {
+        width: 100%;
+      }
+      &__text {
+        display: block;
+        position: absolute;
+        color: #ffffff;
+        font-size: map-get($map: $font-size, $key: h3);
+      }
+    }
+  }
+  &__see-more {
+    font-size: map-get($map: $font-size, $key: h3);
+    margin: 2rem 0 4.5rem 0;
+  }
+}
