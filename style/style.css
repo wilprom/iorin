@@ -117,7 +117,7 @@ body * {
 }
 .best-product-carousel__image {
   width: 100%;
-  height: 18.75rem;
+  height: 19.125rem;
   border-radius: 0.25rem;
   object-fit: cover;
 }
@@ -135,6 +135,32 @@ body * {
 }
 .best-product-carousel__arrow__next {
   right: 15% !important;
+}
+
+.our-products-carousel {
+  display: flex;
+  align-items: center;
+}
+.our-products-carousel__image {
+  width: 100%;
+  height: 19.125rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+.our-products-carousel__arrow {
+  top: 115% !important;
+  border-radius: initial !important;
+  background-color: #ffffff !important;
+}
+.our-products-carousel__arrow:hover {
+  color: #ffffff !important;
+  background-color: #209151 !important;
+}
+.our-products-carousel__arrow__prev {
+  left: 83% !important;
+}
+.our-products-carousel__arrow__next {
+  right: 10% !important;
 }
 
 .header {
@@ -265,49 +291,71 @@ body * {
   padding-left: 1.25rem;
 }
 
-.custom-products {
+.custom-services {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.custom-products__content {
+.custom-services__content {
   width: 50%;
   margin: auto;
   text-align: center;
 }
-.custom-products__content__title {
+.custom-services__content__title {
   font-size: 3rem;
   font-weight: 700;
   color: #072328;
 }
-.custom-products__content__text {
+.custom-services__content__text {
   font-size: 1.125rem;
   color: #b9b8b8;
 }
-.custom-products__products {
+.custom-services__services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0 7.625rem;
   margin: 3.438rem 10.625rem;
 }
-.custom-products__products__item {
+.custom-services__services__item {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.custom-products__products__item__img {
+.custom-services__services__item__img {
   width: 100%;
 }
-.custom-products__products__item__text {
+.custom-services__services__item__text {
   display: block;
   position: absolute;
   color: #ffffff;
   font-size: 1.5rem;
 }
-.custom-products__see-more {
+.custom-services__see-more {
   font-size: 1.5rem;
   margin: 2rem 0 4.5rem 0;
+}
+
+.our-products {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 0 7.5rem 7rem;
+}
+.our-products__content {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  column-gap: 35rem;
+  align-items: center;
+  margin: 0 5rem 0 0;
+}
+.our-products__content__title {
+  color: #494949;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.our-products__content__text__arrow {
+  color: #494949;
+  padding-left: 0.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */

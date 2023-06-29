@@ -15,7 +15,7 @@
     }
   }
 }
-.custom-products {
+.custom-services {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
       color: #b9b8b8;
     }
   }
-  &__products {
+  &__services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 7.625rem;
@@ -57,5 +57,28 @@
   &__see-more {
     font-size: map-get($map: $font-size, $key: h3);
     margin: 2rem 0 4.5rem 0;
+  }
+}
+.our-products {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 0 7.5rem 7rem;
+  &__content {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    column-gap: 35rem;
+    align-items: center;
+    margin: 0 5rem 0 0;
+    &__title {
+      color: #494949;
+      font-size: map-get($map: $font-size, $key: h2);
+      font-weight: 700;
+    }
+    &__text {
+      &__arrow {
+        color: #494949;
+        padding-left: 0.75rem;
+      }
+    }
   }
 }
