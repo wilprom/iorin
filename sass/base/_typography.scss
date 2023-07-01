@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'orkneyregular', Arial, Helvetica, sans-serif;
+  font-family: map-get($map: $font-family, $key: orkney), Arial, Helvetica, sans-serif;
   font-weight: 400;
   * {
     font-size: map-get($map: $font-size, $key: text);
