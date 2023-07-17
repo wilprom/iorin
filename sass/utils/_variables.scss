@@ -11,7 +11,10 @@ $font-size: (
   text: 1.125rem,
 );
 
+$orkney: 'orkneyregular', Arial, Helvetica, sans-serif;
+$openSans: 'Open Sans', Arial, Helvetica, sans-serif;
+
 $font-family: (
-  orkney: 'orkneyregular',
-  openSans: 'Open Sans'
+  orkney: $orkney,
+  openSans: $openSans,
 )
