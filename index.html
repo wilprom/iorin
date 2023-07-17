@@ -54,25 +54,29 @@
             <a href="#" class="nav__list__link">A propos</a>
           </li>
         </ul>
+        <!-- SEARCH FORM -->
+        <form action="" role="search" class="nav__form-search">
+          <label for="search" class="nav__form-search__label hidden"
+            >Rechercher</label
+          >
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Rechercher un produit"
+            class="nav__form-search__input"
+          />
+          <button
+            type="submit"
+            class="nav__form-search__btn"
+            aria-label="start search"
+          >
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </nav>
-      <!-- SEARCH FORM -->
-      <form action="" role="search" class="form-search">
-        <label for="search" class="form-search__label hidden">Rechercher</label>
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Rechercher un produit"
-          class="form-search__input"
-        />
-        <button
-          type="submit"
-          class="form-search__btn"
-          aria-label="start search"
-        >
-          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-        </button>
-      </form>
+      <!-- BURGER MENU -->
+      <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
     </header>
     <main>
       <section class="hero">
@@ -632,6 +636,8 @@
     <!-- SCRIPTS -->
     <!-- SCRIPT CAROUSEL ELEMENTS -->
     <script type="module" src="./scripts/utils/carousel.js"></script>
+    <!-- SCRIPT BURGER MENU -->
+    <script src="./scripts/utils/burgerMenu.js"></script>
     <!-- SCRIPT SPLIDE LIBRARY -->
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
   </body>

@@ -5,4 +5,7 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  @include mobile-menu {
+    padding: 2rem;
+  }
 }

@@ -17,4 +17,8 @@ $openSans: 'Open Sans', Arial, Helvetica, sans-serif;
 $font-family: (
   orkney: $orkney,
   openSans: $openSans,
-)
+);
+
+$breakpoints: (
+  mobile-menu: 1208px,
+);

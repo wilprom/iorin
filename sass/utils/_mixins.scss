@@ -6,3 +6,9 @@
   bottom: 0;
   left: 0;
 }
+
+@mixin mobile-menu {
+  @media screen and (max-width: map-get($breakpoints, mobile-menu)) {
+    @content;
+  }
+}
