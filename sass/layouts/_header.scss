@@ -5,7 +5,20 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  .button-close {
+    display: none;
+    margin-left: 1rem;
+  }
   @include mobile-menu {
     padding: 2rem;
+    &__logo {
+      flex: 1;
+    }
+    .button-close {
+      &--visible {
+        display: block;
+        z-index: 100;
+      }
+    }
   }
 }

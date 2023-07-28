@@ -32,11 +32,8 @@
   <body>
     <header class="header">
       <!-- LOGO -->
-      <a href="./index.html"
-        ><img
-          src="./assets/img/logo/Logo.png"
-          alt="Logo Iorin"
-          class="header__logo"
+      <a href="./index.html" class="header__logo"
+        ><img src="./assets/img/logo/Logo.png" alt="Logo Iorin"
       /></a>
       <!-- MAIN NAVIGATION -->
       <nav class="nav" aria-label="main navigation">
@@ -54,29 +51,37 @@
             <a href="#" class="nav__list__link">A propos</a>
           </li>
         </ul>
-        <!-- SEARCH FORM -->
-        <form action="" role="search" class="nav__form-search">
-          <label for="search" class="nav__form-search__label hidden"
-            >Rechercher</label
-          >
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Rechercher un produit"
-            class="nav__form-search__input"
-          />
-          <button
-            type="submit"
-            class="nav__form-search__btn"
-            aria-label="start search"
-          >
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-          </button>
-        </form>
       </nav>
+      <!-- SEARCH FORM -->
+      <form action="" role="search" class="form-search">
+        <label for="search" class="form-search__label hidden">Rechercher</label>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Rechercher un produit"
+          class="form-search__input"
+        />
+        <button
+          type="submit"
+          class="form-search__btn"
+          aria-label="start search"
+        >
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+      </form>
+      <!-- MOBILE SEARCH -->
+      <div class="search-mobile">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </div>
       <!-- BURGER MENU -->
-      <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+      <div class="burger-menu">
+        <img src="./assets/icons/menu-mobile.svg" alt="" />
+      </div>
+      <!-- CLOSE MOBILE SEARCH & BURGER MENU -->
+      <div class="button-close">
+        <i class="fa-solid fa-xmark button-close__icon icon"></i>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -635,9 +640,9 @@
 
     <!-- SCRIPTS -->
     <!-- SCRIPT CAROUSEL ELEMENTS -->
-    <script type="module" src="./scripts/utils/carousel.js"></script>
-    <!-- SCRIPT BURGER MENU -->
-    <script src="./scripts/utils/burgerMenu.js"></script>
+    <script type="module" src="./scripts/carousel.js"></script>
+    <!-- SCRIPT FOR MOBILE -->
+    <script src="./scripts/mobile.js"></script>
     <!-- SCRIPT SPLIDE LIBRARY -->
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
   </body>

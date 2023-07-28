@@ -1,0 +1,50 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @splidejs/splide
+
+PATH: 
+  C:\Users\Wilfried\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Wilfried\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\Wilfried\AppData\Local\Microsoft\WindowsApps;C:\Users\Wilfried\.dotnet\tools;C:\Users\Wilfried\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Wilfried\AppData\Local\GitHubDesktop\bin;C:\Users\Wilfried\AppData\Roaming\npm;C:\Users\Wilfried\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  20.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "iorin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./style/style.css",
+      "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/WilfriedProm/Iorin.git"
+    },
+    "author": "Wilfried Prombo",
+    "license": "ISC",
+    "browserslist": "last 4 versions",
+    "bugs": {
+      "url": "https://github.com/WilfriedProm/Iorin/issues"
+    },
+    "homepage": "https://github.com/WilfriedProm/Iorin#readme",
+    "dependencies": {
+      "@splidejs/splide": "^4.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)

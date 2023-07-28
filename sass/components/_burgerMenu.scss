@@ -1,7 +1,0 @@
-.burger-menu {
-  display: none;
-  @include mobile-menu {
-    display: block;
-    z-index: 100;
-  }
-}
