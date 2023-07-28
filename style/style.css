@@ -338,7 +338,8 @@ body * {
 }
 
 .form-send-email {
-  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 .form-send-email__input {
   width: 100%;
@@ -355,9 +356,9 @@ body * {
   background-color: rgba(255, 255, 255, 0);
 }
 .form-send-email__btn {
-  position: absolute;
-  top: 0.715rem;
-  right: 0.65rem;
+  margin-left: -8.75rem;
+  margin-top: 0.61rem;
+  height: 3rem;
 }
 
 .categories-product {

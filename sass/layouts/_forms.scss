@@ -34,8 +34,8 @@
   }
 }
 .form-send-email {
-  //TODO: remove position relative, absolute and add negative marge on the button
-  position: relative; 
+  display: flex;
+  flex-direction: row;
   &__input {
     width: 100%;
     padding: 1.375rem 10rem 1.375rem 1.5rem;
@@ -51,8 +51,8 @@
     }
   }
   &__btn {
-    position: absolute;
-    top: 0.715rem;
-    right: 0.65rem;
+    margin-left: -8.75rem;
+    margin-top: .610rem;
+    height: 3rem;
   }
 }
