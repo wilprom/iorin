@@ -34,7 +34,7 @@
   }
 }
 .form-send-email {
-  // ! remove position relative and negative marge on the button
+  //TODO: remove position relative, absolute and add negative marge on the button
   position: relative; 
   &__input {
     width: 100%;
