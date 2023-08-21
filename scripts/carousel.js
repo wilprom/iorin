@@ -27,6 +27,14 @@ const bestProductSplide = new Splide(splides[1], {
     prev: 'splide__arrow--prev best-product-carousel__arrow__prev',
     next: 'splide__arrow--next best-product-carousel__arrow__next',
   },
+  breakpoints : {
+    600: {
+      perPage: 1,
+    },
+    320: {
+      width: '90vw',
+    },
+  },
 })
 
 bestProductSplide.on('arrows:mounted')
@@ -46,6 +54,11 @@ const ourProductsSplide = new Splide(splides[2], {
     arrow: 'splide__arrow our-products-carousel__arrow',
     prev: 'splide__arrow--prev our-products-carousel__arrow__prev',
     next: 'splide__arrow--next our-products-carousel__arrow__next',
+  },
+  breakpoints : {
+    600: {
+      perPage: 1,
+    },
   },
 })
 

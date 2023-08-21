@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile-only)) {
+    @content;
+  }
+}

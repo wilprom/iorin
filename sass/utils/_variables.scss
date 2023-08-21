@@ -3,14 +3,6 @@ $color-secondary: #0f4c60;
 $color-tertiary: #a5cc1e;
 $color-quaternary: #072328;
 
-$font-size: (
-  h1: 6.25rem,
-  h2: 3rem,
-  h3: 1.5rem,
-  h4: 1.25rem,
-  text: 1.125rem,
-);
-
 $orkney: 'orkneyregular', Arial, Helvetica, sans-serif;
 $openSans: 'Open Sans', Arial, Helvetica, sans-serif;
 
@@ -19,6 +11,15 @@ $font-family: (
   openSans: $openSans,
 );
 
+$font-size: (
+  h1: 6.25rem,
+  h2: 3rem,
+  h3: 1.5rem,
+  h4: 1.25rem,
+  text: 1.125rem,
+);
+
 $breakpoints: (
   mobile-menu: 1208px,
+  mobile-only: 600px
 );

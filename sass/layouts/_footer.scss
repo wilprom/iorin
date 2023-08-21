@@ -21,4 +21,16 @@
       width: 95%;
     }
   }
+  @include mobile-only {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    &__container {
+      flex-direction: column;
+    }
+    &__content {
+      text-align: center;
+    }
+  }
 }
