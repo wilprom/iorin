@@ -110,6 +110,11 @@ body * {
 .hero-carousel__dots {
   bottom: 9rem !important;
 }
+@media screen and (max-width: 600px) {
+  .hero-carousel__slide__content {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero-carousel__slide__img {
     height: 100vh;
@@ -117,7 +122,6 @@ body * {
   }
   .hero-carousel__slide__content {
     padding: 2rem;
-    text-align: left;
   }
   .hero-carousel__slide__content__title {
     font-size: calc(1.5rem + 3vw);

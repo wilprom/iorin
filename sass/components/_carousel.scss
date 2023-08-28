@@ -34,6 +34,13 @@
   &__dots {
     bottom: 9rem !important;
   }
+  @include mobile-only {
+    &__slide {
+      &__content {
+        text-align: left;
+      }
+    }
+  }
   @include mobile-tablet {
     &__slide {
       &__img {
@@ -42,7 +49,6 @@
       }
       &__content {
         padding: 2rem;
-        text-align: left;
         &__title {
           font-size: calc(1.5rem + 3vw);
         }
@@ -135,4 +141,3 @@
     }
   }
 }
-
