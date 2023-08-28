@@ -232,7 +232,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 6rem 7.5rem 12rem 7.5rem;
-  position: relative;
   &__grid {
     border-radius: 0.625rem;
     &--grey {
@@ -282,11 +281,7 @@
       }
     }
     &-main {
-      position: absolute;
-      top: 2rem;
-      bottom: 2rem;
-      left: 31rem;
-      right: 3rem;
+      margin: 2rem 0 2rem -4rem;
       padding: 0 3rem;
       &__content {
         &__title {
