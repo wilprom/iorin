@@ -14,7 +14,7 @@
       }
     }
   }
-  @include mobile-only {
+  @include mobile {
     grid-template-columns: 1fr;
     padding-left: 2rem;
   }
@@ -62,7 +62,7 @@
     font-size: map-get($map: $font-size, $key: h3);
     margin: 2rem 0 4.5rem 0;
   }
-  @include mobile-only {
+  @include mobile {
     &__content {
       width: 90%;
     }
@@ -95,7 +95,7 @@
       }
     }
   }
-  @include mobile-only {
+  @include mobile {
     padding-left: 2rem;
     &__content {
       grid-template-columns: 1fr;
@@ -164,7 +164,7 @@
       order: 2;
     }
   }
-  @include mobile-only {
+  @include mobile {
     grid-template-columns: 1fr;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -209,10 +209,10 @@
       }
     }
   }
-  @include mobile-only {
+  @include mobile {
     grid-template-columns: 1fr;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0;
+    margin-right: 0;
     &__article {
       &__image {
         &--main {
@@ -302,7 +302,7 @@
       }
     }
   }
-  @include mobile-only {
+  @include mobile {
     grid-template-columns: 1fr;
     margin-left: 0;
     margin-right: 0;

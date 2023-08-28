@@ -34,7 +34,7 @@
   &__dots {
     bottom: 9rem !important;
   }
-  @include mobile-only {
+  @include mobile {
     &__slide {
       &__img {
         height: 100vh;
@@ -78,7 +78,7 @@
       right: 15% !important;
     }
   }
-  @include mobile-only {
+  @include mobile {
     &__arrow {
       &__prev {
         left: 60% !important;
@@ -110,7 +110,7 @@
       right: 10% !important;
     }
   }
-  @include mobile-only {
+  @include mobile {
     &__arrow {
       &__prev {
         left: 65% !important;

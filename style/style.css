@@ -627,8 +627,8 @@ body * {
 @media screen and (max-width: 600px) {
   .articles {
     grid-template-columns: 1fr;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .articles__article__image--main {
     height: auto;

@@ -21,7 +21,7 @@
       width: 95%;
     }
   }
-  @include mobile-only {
+  @include mobile {
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
