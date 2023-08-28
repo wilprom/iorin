@@ -28,7 +28,7 @@ const bestProductSplide = new Splide(splides[1], {
     next: 'splide__arrow--next best-product-carousel__arrow__next',
   },
   breakpoints : {
-    600: {
+    768: {
       perPage: 1,
     },
     320: {
@@ -56,6 +56,9 @@ const ourProductsSplide = new Splide(splides[2], {
     next: 'splide__arrow--next our-products-carousel__arrow__next',
   },
   breakpoints : {
+    768: {
+      perPage: 2,
+    },
     600: {
       perPage: 1,
     },

@@ -14,8 +14,10 @@
       }
     }
   }
-  @include mobile {
+  @include mobile-only {
     grid-template-columns: 1fr;
+  }
+  @include mobile-tablet {
     padding-left: 2rem;
   }
 }
@@ -62,14 +64,21 @@
     font-size: map-get($map: $font-size, $key: h3);
     margin: 2rem 0 4.5rem 0;
   }
-  @include mobile {
+  @include mobile-only {
     &__content {
       width: 90%;
     }
+  }
+  @include mobile-tablet {
     &__services {
       grid-template-columns: 1fr;
       margin: 3.438rem 0;
       row-gap: 2rem;
+    }
+  }
+  @include tablet-only {
+    &__content {
+      width: 80%;
     }
   }
 }
@@ -82,7 +91,7 @@
     grid-template-columns: 35% 1fr;
     column-gap: 35rem;
     align-items: center;
-    margin: 0 5rem 0 0;
+    margin-right: 5rem;
     &__title {
       color: #494949;
       font-size: map-get($map: $font-size, $key: h2);
@@ -95,10 +104,20 @@
       }
     }
   }
-  @include mobile {
-    padding-left: 2rem;
+  @include mobile-only {
     &__content {
       grid-template-columns: 1fr;
+    }
+  }
+  @include mobile-tablet {
+    padding-left: 2rem;
+  }
+  @include tablet-only {
+    padding-right: 2rem;
+    &__content {
+      column-gap: 20rem;
+      margin-right: 0;
+      grid-template-columns: 1fr 30%;
     }
   }
 }
@@ -132,15 +151,6 @@
   &__testimonial {
     position: relative;
     border-radius: 0.625rem;
-    &--1 {
-      background-color: $color-quaternary;
-    }
-    &--2 {
-      background-color: $color-secondary;
-    }
-    &--3 {
-      background-color: $color-primary;
-    }
     &__nameAuthor {
       color: #d6d6d6;
       font-size: map-get($map: $font-size, $key: h3);
@@ -163,17 +173,42 @@
       line-height: 2rem;
       order: 2;
     }
+    &--1 {
+      background-color: $color-quaternary;
+    }
+    &--2 {
+      background-color: $color-secondary;
+    }
+    &--3 {
+      background-color: $color-primary;
+    }
   }
-  @include mobile {
+  @include mobile-only {
     grid-template-columns: 1fr;
-    margin-left: 2rem;
-    margin-right: 2rem;
     row-gap: 10rem;
     &__grid {
       padding: 7rem 2rem;
     }
     &__content {
       padding: 0;
+    }
+  }
+  @include mobile-tablet {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  @include tablet-only {
+    row-gap: 15rem;
+    &__grid {
+      padding: 3rem;
+    }
+    &__content {
+      padding: 1rem;
+    }
+    &__testimonial {
+      &__nameAuthor {
+        margin-bottom: -2rem;
+      }
     }
   }
 }
@@ -209,7 +244,16 @@
       }
     }
   }
-  @include mobile {
+  @include mobile-only {
+    &__article {
+      &__content {
+        &__text {
+          display: none;
+        }
+      }
+    }
+  }
+  @include mobile-tablet {
     grid-template-columns: 1fr;
     margin-left: 0;
     margin-right: 0;
@@ -218,11 +262,7 @@
         &--main {
           height: auto;
           width: 100%;
-        }
-      }
-      &__content {
-        &__text {
-          display: none;
+          object-fit: cover;
         }
       }
     }
@@ -234,13 +274,6 @@
   margin: 6rem 7.5rem 12rem 7.5rem;
   &__grid {
     border-radius: 0.625rem;
-    &--grey {
-      background-color: #d9d9d9;
-    }
-    &--green {
-      background-color: $color-primary;
-      color: white;
-    }
     &-services {
       display: grid;
       grid-template-rows: repeat(3, 1fr);
@@ -301,8 +334,15 @@
         }
       }
     }
+    &--grey {
+      background-color: #d9d9d9;
+    }
+    &--green {
+      background-color: $color-primary;
+      color: white;
+    }
   }
-  @include mobile {
+  @include mobile-only {
     grid-template-columns: 1fr;
     margin-left: 0;
     margin-right: 0;
@@ -312,7 +352,25 @@
       }
       &-main {
         padding: 2rem 2rem 5rem 2rem;
-        margin: 0
+        margin: 0;
+      }
+    }
+  }
+  @include tablet-only {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    &__grid {
+      &-services {
+        &__service {
+          &__icon {
+            display: none;
+          }
+        }
+      }
+      &-main {
+        margin: -2rem 2rem 2rem 2rem;
+        padding-bottom: 3rem;
       }
     }
   }

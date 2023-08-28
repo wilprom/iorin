@@ -25,11 +25,10 @@
     align-items: center;
   }
 }
-.search-mobile {
+.search-mobile-only {
   display: none;
   @include mobile-menu {
     display: block;
-    margin-right: 1rem;
     cursor: pointer;
     z-index: 100;
   }
@@ -56,7 +55,10 @@
     margin-top: 0.61rem;
     height: 3rem;
   }
-  @include mobile {
+  @include mobile-only {
     margin: 3rem 0;
+  }
+  @include tablet-only {
+    margin: 5rem 0;
   }
 }

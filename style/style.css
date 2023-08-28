@@ -110,7 +110,7 @@ body * {
 .hero-carousel__dots {
   bottom: 9rem !important;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .hero-carousel__slide__img {
     height: 100vh;
     object-fit: cover;
@@ -158,6 +158,14 @@ body * {
     left: 60% !important;
   }
 }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .best-product-carousel__arrow__prev {
+    left: 65% !important;
+  }
+  .best-product-carousel__arrow__next {
+    right: 20% !important;
+  }
+}
 
 .our-products-carousel {
   display: flex;
@@ -187,6 +195,11 @@ body * {
 @media screen and (max-width: 600px) {
   .our-products-carousel__arrow__prev {
     left: 65% !important;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .our-products-carousel__arrow__prev {
+    left: 78% !important;
   }
 }
 
@@ -269,6 +282,7 @@ body * {
     display: block;
     cursor: pointer;
     z-index: 100;
+    margin-left: 1rem;
   }
 }
 
@@ -320,16 +334,26 @@ body * {
 }
 @media screen and (max-width: 600px) {
   .footer {
-    display: flex;
-    flex-direction: column;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
   .footer__container {
     flex-direction: column;
   }
   .footer__content {
     text-align: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -373,13 +397,12 @@ body * {
   }
 }
 
-.search-mobile {
+.search-mobile-only {
   display: none;
 }
 @media screen and (max-width: 1208px) {
-  .search-mobile {
+  .search-mobile-only {
     display: block;
-    margin-right: 1rem;
     cursor: pointer;
     z-index: 100;
   }
@@ -413,6 +436,11 @@ body * {
     margin: 3rem 0;
   }
 }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .form-send-email {
+    margin: 5rem 0;
+  }
+}
 
 .categories-product {
   display: grid;
@@ -430,6 +458,10 @@ body * {
 @media screen and (max-width: 600px) {
   .categories-product {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .categories-product {
     padding-left: 2rem;
   }
 }
@@ -482,10 +514,17 @@ body * {
   .custom-services__content {
     width: 90%;
   }
+}
+@media screen and (max-width: 768px) {
   .custom-services__services {
     grid-template-columns: 1fr;
     margin: 3.438rem 0;
     row-gap: 2rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .custom-services__content {
+    width: 80%;
   }
 }
 
@@ -499,7 +538,7 @@ body * {
   grid-template-columns: 35% 1fr;
   column-gap: 35rem;
   align-items: center;
-  margin: 0 5rem 0 0;
+  margin-right: 5rem;
 }
 .our-products__content__title {
   color: #494949;
@@ -511,11 +550,23 @@ body * {
   padding-left: 0.75rem;
 }
 @media screen and (max-width: 600px) {
+  .our-products__content {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
   .our-products {
     padding-left: 2rem;
   }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .our-products {
+    padding-right: 2rem;
+  }
   .our-products__content {
-    grid-template-columns: 1fr;
+    column-gap: 20rem;
+    margin-right: 0;
+    grid-template-columns: 1fr 30%;
   }
 }
 
@@ -549,15 +600,6 @@ body * {
   position: relative;
   border-radius: 0.625rem;
 }
-.testimonials__testimonial--1 {
-  background-color: #072328;
-}
-.testimonials__testimonial--2 {
-  background-color: #0f4c60;
-}
-.testimonials__testimonial--3 {
-  background-color: #209151;
-}
 .testimonials__testimonial__nameAuthor {
   color: #d6d6d6;
   font-size: 1.5rem;
@@ -580,11 +622,18 @@ body * {
   line-height: 2rem;
   order: 2;
 }
+.testimonials__testimonial--1 {
+  background-color: #072328;
+}
+.testimonials__testimonial--2 {
+  background-color: #0f4c60;
+}
+.testimonials__testimonial--3 {
+  background-color: #209151;
+}
 @media screen and (max-width: 600px) {
   .testimonials {
     grid-template-columns: 1fr;
-    margin-left: 2rem;
-    margin-right: 2rem;
     row-gap: 10rem;
   }
   .testimonials__grid {
@@ -592,6 +641,26 @@ body * {
   }
   .testimonials__content {
     padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .testimonials {
+    row-gap: 15rem;
+  }
+  .testimonials__grid {
+    padding: 3rem;
+  }
+  .testimonials__content {
+    padding: 1rem;
+  }
+  .testimonials__testimonial__nameAuthor {
+    margin-bottom: -2rem;
   }
 }
 
@@ -625,6 +694,11 @@ body * {
   line-height: 2.5rem;
 }
 @media screen and (max-width: 600px) {
+  .articles__article__content__text {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .articles {
     grid-template-columns: 1fr;
     margin-left: 0;
@@ -633,9 +707,7 @@ body * {
   .articles__article__image--main {
     height: auto;
     width: 100%;
-  }
-  .articles__article__content__text {
-    display: none;
+    object-fit: cover;
   }
 }
 
@@ -646,13 +718,6 @@ body * {
 }
 .callToAction__grid {
   border-radius: 0.625rem;
-}
-.callToAction__grid--grey {
-  background-color: #d9d9d9;
-}
-.callToAction__grid--green {
-  background-color: #209151;
-  color: white;
 }
 .callToAction__grid-services {
   display: grid;
@@ -710,6 +775,13 @@ body * {
 .callToAction__grid-main__content__button:hover {
   color: #ffffff;
 }
+.callToAction__grid--grey {
+  background-color: #d9d9d9;
+}
+.callToAction__grid--green {
+  background-color: #209151;
+  color: white;
+}
 @media screen and (max-width: 600px) {
   .callToAction {
     grid-template-columns: 1fr;
@@ -722,6 +794,20 @@ body * {
   .callToAction__grid-main {
     padding: 2rem 2rem 5rem 2rem;
     margin: 0;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .callToAction {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .callToAction__grid-services__service__icon {
+    display: none;
+  }
+  .callToAction__grid-main {
+    margin: -2rem 2rem 2rem 2rem;
+    padding-bottom: 3rem;
   }
 }
 

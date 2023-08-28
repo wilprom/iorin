@@ -34,7 +34,7 @@
   &__dots {
     bottom: 9rem !important;
   }
-  @include mobile {
+  @include mobile-tablet {
     &__slide {
       &__img {
         height: 100vh;
@@ -78,10 +78,20 @@
       right: 15% !important;
     }
   }
-  @include mobile {
+  @include mobile-only {
     &__arrow {
       &__prev {
         left: 60% !important;
+      }
+    }
+  }
+  @include tablet-only {
+    &__arrow {
+      &__prev {
+        left: 65% !important;
+      }
+      &__next {
+        right: 20% !important;
       }
     }
   }
@@ -110,10 +120,17 @@
       right: 10% !important;
     }
   }
-  @include mobile {
+  @include mobile-only {
     &__arrow {
       &__prev {
         left: 65% !important;
+      }
+    }
+  }
+  @include tablet-only {
+    &__arrow {
+      &__prev {
+        left: 78% !important;
       }
     }
   }
