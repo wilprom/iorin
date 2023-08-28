@@ -720,8 +720,8 @@ body * {
     display: none;
   }
   .callToAction__grid-main {
-    position: unset;
-    padding-bottom: 2rem;
+    padding: 2rem 2rem 5rem 2rem;
+    margin: 0;
   }
 }
 
