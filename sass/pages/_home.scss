@@ -20,6 +20,9 @@
   @include mobile-tablet {
     padding-left: 2rem;
   }
+  @include tablet-only {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .custom-services {
   display: flex;
@@ -104,20 +107,17 @@
       }
     }
   }
-  @include mobile-only {
+  @include mobile-tablet {
+    padding-left: 2rem;
     &__content {
       grid-template-columns: 1fr;
     }
-  }
-  @include mobile-tablet {
-    padding-left: 2rem;
   }
   @include tablet-only {
     padding-right: 2rem;
     &__content {
       column-gap: 20rem;
       margin-right: 0;
-      grid-template-columns: 1fr 30%;
     }
   }
 }
