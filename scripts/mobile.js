@@ -4,24 +4,44 @@ const searchMobile = document.querySelector('.search-mobile')
 const formSearch = document.querySelector('.form-search')
 const buttonClose = document.querySelector('.button-close')
 
-burgerMenu.addEventListener('click', () => {
+const toggleHiddenDomElement = (element) => {
+  element.classList.toggle('hidden')
+}
+const toggleVisibilityButtonClose = (button) => {
+  button.classList.toggle('button-close--visible')
+}
+const addVisibilityOnNavbar = (navBar) => {
   nav.classList.add('nav--visible')
-  burgerMenu.classList.toggle('hidden')
-  searchMobile.classList.toggle('hidden')
-  buttonClose.classList.toggle('button-close--visible')
+}
+const removeVisibilityOnNavbar = (navBar) => {
+  nav.classList.remove('nav--visible')
+}
+const addVisibilityOnFormSearch = (form) => {
+  formSearch.classList.add('form-search--visible')
+}
+const removeVisibilityOnFormSearch = (form) => {
+  formSearch.classList.remove('form-search--visible')
+}
+
+
+burgerMenu.addEventListener('click', () => {
+  addVisibilityOnNavbar(nav)
+  toggleVisibilityButtonClose(buttonClose)
+  toggleHiddenDomElement(burgerMenu)
+  toggleHiddenDomElement(searchMobile)
 })
 
 searchMobile.addEventListener('click', () => {
-  formSearch.classList.add('form-search--visible')
-  burgerMenu.classList.toggle('hidden')
-  searchMobile.classList.toggle('hidden')
-  buttonClose.classList.toggle('button-close--visible')
+  addVisibilityOnFormSearch(formSearch)
+  toggleVisibilityButtonClose(buttonClose)
+  toggleHiddenDomElement(burgerMenu)
+  toggleHiddenDomElement(searchMobile)
 })
 
 buttonClose.addEventListener('click', () => {
-  buttonClose.classList.toggle('button-close--visible')
-  nav.classList.remove('nav--visible')
-  formSearch.classList.remove('form-search--visible')
-  burgerMenu.classList.toggle('hidden')
-  searchMobile.classList.toggle('hidden')
+  removeVisibilityOnNavbar(nav)
+  removeVisibilityOnFormSearch(formSearch)
+  toggleVisibilityButtonClose(buttonClose)
+  toggleHiddenDomElement(burgerMenu)
+  toggleHiddenDomElement(searchMobile)
 })
