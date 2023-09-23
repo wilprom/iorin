@@ -59,6 +59,24 @@
       }
     }
   }
+  @include small-laptop-only {
+    &__slide {
+      &__img {
+        height: 100vh;
+        object-fit: cover;
+      }
+      &__content {
+        padding: 10rem;
+        &__title {
+          font-size: calc(1.5rem + 4vw);
+        }
+        &__text {
+          font-size: calc(1rem + 1vw);
+          padding: 2rem 0;
+        }
+      }
+    }
+  }
 }
 .best-product-carousel {
   display: flex;
@@ -101,6 +119,13 @@
       }
     }
   }
+  @include small-laptop-only {
+    &__arrow {
+      &__prev {
+        left: 65% !important;
+      }
+    }
+  }
 }
 .our-products-carousel {
   display: flex;
@@ -137,6 +162,13 @@
     &__arrow {
       &__prev {
         left: 72% !important;
+      }
+    }
+  }
+  @include small-laptop-only {
+    &__arrow {
+      &__prev {
+        left: 78% !important;
       }
     }
   }

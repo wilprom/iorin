@@ -40,8 +40,20 @@
   }
 }
 
-@mixin tablet_only {
+@mixin tablet-only {
   @media screen and (min-width: calc(map-get($breakpoints, mobile) + 1px)) and (max-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin tablet-small-laptop {
+  @media screen and (max-width: map-get($breakpoints, smallLaptop)) {
+    @content;
+  }
+}
+
+@mixin small-laptop-only {
+  @media screen and (min-width: calc(map-get($breakpoints, tablet) + 1px)) and (max-width: map-get($breakpoints, smallLaptop)) {
     @content;
   }
 }
