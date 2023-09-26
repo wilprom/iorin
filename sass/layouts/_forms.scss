@@ -19,7 +19,7 @@
     }
   }
   @include mobile-menu {
-    @include animations-translate-header;
+    @include header-translation;
     display: flex;
     justify-content: center;
     align-items: center;

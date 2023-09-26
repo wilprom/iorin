@@ -10,18 +10,6 @@
   @include position-absolute();
 }
 
-@mixin animations-translate-header {
-  @include position-absolute();
-  z-index: 100;
-  background-color: #ffffff80;
-  backdrop-filter: blur(0.8rem);
-  transform: translateX(-100%);
-  transition: transform 500ms ease;
-  &--visible {
-    transform: translateX(0);
-  }
-}
-
 @mixin mobile-menu {
   @media screen and (max-width: map-get($breakpoints, mobile-menu)) {
     @content;
