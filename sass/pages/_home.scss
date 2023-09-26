@@ -18,13 +18,11 @@
       }
     }
   }
-  @include mobile-only {
-    grid-template-columns: 1fr;
-  }
   @include mobile-tablet {
+    grid-template-columns: 1fr;
     padding-left: 2rem;
   }
-  @include tablet-small-laptop {
+  @include small-laptop-only {
     grid-template-columns: repeat(2, 1fr);
   }
 }

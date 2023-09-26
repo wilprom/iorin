@@ -112,7 +112,7 @@
   @include tablet-only {
     &__arrow {
       &__prev {
-        left: 52% !important;
+        left: 68% !important;
       }
       &__next {
         right: 20% !important;
@@ -122,7 +122,7 @@
   @include small-laptop-only {
     &__arrow {
       &__prev {
-        left: 65% !important;
+        left: 70% !important;
       }
     }
   }
